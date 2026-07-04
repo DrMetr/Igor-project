@@ -102,7 +102,12 @@ export default function Contacts({ windowWidth }) {
                 src={process.env.PUBLIC_URL + "/images/owner.svg"}
                 alt="владелец"
               />
-              <p style={{ textIndent: "0" }}>ИП Артемьев Артём Сергеевич</p>
+              <a
+                href="https://www.rusprofile.ru/ip/319213000057662"
+                className="artyom"
+              >
+                ИП Артемьев Артём Сергеевич
+              </a>
             </div>
           </div>
           <br />
@@ -193,56 +198,6 @@ export function Form() {
       return false;
     }
   };
-
-  // HANDLESUBMIT --
-  /*const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    // Устанавливаем статус загрузки
-    setStatus('Отправка...');
-    
-    try {
-        const response = await fetch('http://localhost:5000/api/send-message', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name: formData.name,
-                phone: formData.phone,
-                email: formData.email || '',
-                messageTopic: formData.messageTopic,
-                message: formData.message,
-                order: formData.order // скрытое поле для защиты от ботов
-            })
-        });
-        
-        const data = await response.json();
-        
-        if (data.success) {
-            setStatus('✓ Сообщение успешно отправлено!');
-            // Очищаем форму
-            setFormData({
-                name: '',
-                phone: '',
-                email: '',
-                messageTopic: 'Запись на прием',
-                message: '',
-                order: ''
-            });
-            // Через 5 секунд убираем сообщение
-            setTimeout(() => setStatus(''), 5000);
-        } else {
-            setStatus(`✗ ${data.error}`);
-            setTimeout(() => setStatus(''), 5000);
-        }
-    } catch (error) {
-        console.error('Ошибка:', error);
-        setStatus('✗ Ошибка соединения. Попробуйте позже.');
-        setTimeout(() => setStatus(''), 5000);
-    }
-};
-*/
 
   // Добавьте в начало файла (после импортов)
   const isDevelopment =

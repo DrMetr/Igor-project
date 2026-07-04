@@ -19,7 +19,8 @@
 }
 
 .phone-info:hover a,
-.mail-info:hover a {
+.mail-info:hover a,
+.artyom:hover {
   color: royalblue;
   transition: color 0.2s ease-in-out;
 }
@@ -38,6 +39,11 @@
     margin-top: 1rem;
     width: 100%;
   }
+}
+
+.artyom {
+  text-indent: 0;
+  text-decoration: none;
 }
 
 form {

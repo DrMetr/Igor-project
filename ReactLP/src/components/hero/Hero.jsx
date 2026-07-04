@@ -25,13 +25,18 @@ export default function Hero({ windowWidth }) {
     },
     {
       image: "/images/vkW.svg",
-      link: "https://vk.com/liderprava21",
+      link: "https://vk.com/liderpravapfo",
       name: "ВКонтакте",
     },
     {
       image: "/images/tgW.svg",
-      link: "https://t.me/liderpravacheb",
+      link: "https://t.me/liderpravapfo",
       name: "Телеграм",
+    },
+    {
+      image: "/images/max.svg",
+      link: "https://max.ru/join/KlnqqnrRDC6nN8p5G22IyKGhOCkcbRs-D830bo4qWQM",
+      name: "Мессенджер Макс",
     },
   ];
 

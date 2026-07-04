@@ -82,16 +82,25 @@ export default function Footer() {
             </a>
           </div>
           <div className="row" style={{ marginTop: "1rem" }}>
-            <a href="https://t.me/liderpravacheb" title="Телеграм">
+            <a href="https://t.me/liderpravapfo" title="Телеграм">
               <img
                 src={process.env.PUBLIC_URL + "/images/tgW.svg"}
                 alt="телеграм"
               />
             </a>
-            <a href="https://vk.com/liderprava21" title="ВКонтакте">
+            <a href="https://vk.com/liderpravapfo" title="ВКонтакте">
               <img
                 src={process.env.PUBLIC_URL + "/images/vkW.svg"}
                 alt="ВКонтакте"
+              />
+            </a>
+            <a
+              href="https://max.ru/join/KlnqqnrRDC6nN8p5G22IyKGhOCkcbRs-D830bo4qWQM"
+              title="Мессенджер Макс"
+            >
+              <img
+                src={process.env.PUBLIC_URL + "/images/max.svg"}
+                alt="Макс"
               />
             </a>
             {/*Раскомментить в лучшие времена */}
